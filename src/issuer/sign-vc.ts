@@ -33,11 +33,20 @@ const createVc = async () => {
 
   const vcDidKey = (await didKey.create()).did;
 
+  // const credentialType = "PROOF_OF_ADDRESS";
   const credentialType = "PROOF_OF_NAME";
 
   const subjectData = {
     name: "Jessie Doe",
   };
+  // const subjectData = {
+  //   name: "Jessie Doe",
+  //   address: "1234 Mockingbird Lane",
+  //   city: "Anytown",
+  //   state: "Anystate",
+  //   country: "USA",
+  //   zip: "012345",
+  // };
 
   //vc id, expirationDate, credentialStatus, credentialSchema, etc
   const additionalParams = {

@@ -41,3 +41,6 @@ build/
 keys.json
 */verifiable_credentials/*
 */verifiable_presentation/*
+
+**.env
+**.DS_Store

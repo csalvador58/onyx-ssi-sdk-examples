@@ -19,6 +19,8 @@ async function setup() {
         })
         const subjectDID = await ethrDID.generateFromPrivateKey(signingKey)
 
+        console.log("vcs")
+        console.log(vcs)
         //create VP
         const vp = await createAndSignPresentationJWT(subjectDID, vcs)
 
